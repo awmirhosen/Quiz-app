@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-size: 20px;
+    font-family: sans-serif;
+    padding-top: 20px;
+    background: #070707;
+}
+.ctr {
+    margin: 0 auto;
+    max-width: 700px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+.questions-ctr {
+    position: relative;
+    width: 600px;
+}
+.question {
+    width: 100%;
+    padding: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    box-sizing: border-box;
+}
+.single-question {
+    position: relative;
+    width: 100%;
+}
+.answer {
+    margin-top: 5px;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 18px;
+    color: black;
+    width: 100%;
+    background-color: #fff;
+    transition: 0.2s linear all;
+}
+.answer span {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 0.75em;
+    font-style: italic;
+}
+.progress {
+    height: 50px;
+    margin-top: 10px;
+    background-color: #ddd;
+    position: relative;
+}
+.bar {
+    height: 50px;
+    margin-bottom: 50px;
+    background-color: gray;
+    transition: all 0.3s linear;
+}
+.status {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+.answer:not(.is-answered) {
+    cursor: pointer;
+}
+.answer:not(.is-answered):hover {
+    background-color: darkgreen;
+    border-color: #8ce200;
+    color: #fff;
+}
+
+.title {
+    width: 100%;
+    padding: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    background-color: black;
+    border: 1px solid white;
+    color: #fff;
+    box-sizing: border-box;
+}
+.desc {
+    border: 1px solid #8e959f;
+    padding: 20px;
+    font-size: 18px;
+    width: 100%;
+    color: black;
+    background-color: #fff !important;
+    transition: 0.4s linear all;
+    text-align: center;
+}
+.fade-enter-from {
+    opacity: 0;
+}
+.fade-enter-active {
+    transition: all 0.3s linear;
+}
+.fade-leave-active {
+    transition: all 0.3s linear;
+    opacity: 0;
+    position: absolute;
+}
+.fade-leave-to {
+    opacity: 0;
+}
+
+.reset-btn:hover {
+    background: #242424;
+    color: white;
+}
+
+.reset-btn {
+    background-color: grey;
+    border: 0;
+    transition: all linear 400ms;
+    border-radius: 0px;
+    width: 100%;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 25px;
+    margin: 10px auto;
+    display: block;
+}
+
+.result{
+    width: 100%;
+}
+
+
+.reset-btn:active, .reset-btn:focus, .reset-btn:hover{
+    border: 0;
+    outline: 0;
+}
